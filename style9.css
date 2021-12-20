@@ -1,0 +1,297 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;	
+	
+}
+
+html {
+	font-size: 10px;
+	overflow-x: hidden;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+img {
+	display: block;
+}
+
+div.gora {
+	background: linear-gradient(-45deg, #00BCD4, #01579B);
+	width: 100%;
+	height: 37px;
+	text-decoration: none;	
+	display: flex;	/* elementy obok siebie */
+	align-items: center;
+	padding: 1em;
+	position: fixed;
+	z-index: 9998;
+	font-style: American Typewriter;
+	font-family: serif;
+	letter-spacing: 2px;
+	justify-content: right;
+	
+	
+}
+
+div.gora a{
+	color: white;
+	font-size: 15px;
+	font-family: American Typewriter;
+	
+}
+
+div.gora i{
+	color: white;
+	font-size: 15.5px;
+	
+}
+
+.gora a:link {
+  text-decoration: none;
+}
+
+.gora a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+
+.gora a:hover {
+  text-decoration: underline;
+}
+
+.gora a:active {
+  text-decoration: underline;
+}
+
+.logo {
+	width: 18em;
+	
+}
+
+nav {
+	background-color: white;
+	display: flex;	/* elementy obok siebie */
+	justify-content: space-evenly; /* odstęp między elementami */
+	align-items: center;
+	max-height: 100px;
+	padding: 2em;
+	position: fixed;
+	width: 100%;
+	z-index: 9998;
+	margin-top:35px;
+	border-bottom: 1px solid red;
+	border-color: grey;
+	
+	
+}
+
+nav ul {
+	list-style: none;
+	background: rgba(0,0,0,0);
+	overflow: hidden;
+	color: grey;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	width: 62.7%;
+	justify-content: space-around;
+	height: 20px;
+	
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #666666;
+	font-size: 14.5px;
+	font-family:sitka small semibold;
+	letter-spacing: 2px;
+	transition: 0.2s background-size;
+    background: linear-gradient(#01579B, #00BCD4) center bottom / 0 .2em no-repeat;
+	position: relative;
+	padding: 4px 4px
+	
+	
+}
+
+
+nav ul li a:hover {
+    background-size: 100% .2em;
+	
+}	
+
+.con li a {
+	color:#01579B; 
+	opacity:90%; 
+}
+	
+
+
+.burger {
+		background: transparent;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		display: none;	
+}
+
+.line {
+		width: 3em;
+		height: .3em;
+		background-color: grey;
+		margin: .7em;
+		border-radius: 20px;
+		transition: .3s ease-in-out;
+}
+
+.facebook{
+	font-size: 25px;
+	float: left;
+	
+	
+}
+
+.instagram{
+	font-size: 25px;
+	float: left;
+	
+}
+
+.youtube{
+	font-size: 25px;
+	float: left;
+	
+}
+
+.fa-linkedin {
+  background: #7C7C7C;
+  color: white;
+}
+
+.fa-instagram {
+  background: #7C7C7C;
+  color: white;
+}
+
+.fa-facebook {
+  background: #7C7C7C;
+  color: white;
+}
+
+.fa {
+  padding: 7px;
+  width: 41.5px;
+  height: 62px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 7px;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.prawo {
+	display: flex;
+	padding-top: 37px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+	.burger {
+		display: block;
+		transition: .3s ease-in-out;
+		float: right;
+		
+		
+	}
+	
+	.burger.active .line:nth-child(1) {
+		transform: translateY(6px);		
+	}
+	
+	
+	.burger.active .line:nth-child(3) {
+		transform: translateY(-6px);		
+	}
+	
+	ul {
+		position: absolute;
+		right: 0;
+		top: 100px;
+		flex-direction: column; /* ustawienie rzeczy w kolumnie */
+		text-align: center;
+		transform: translate(100%);
+		z-index: 9999;
+		
+		
+	}
+	
+	ul.active {
+		transform: translate(0%);
+		transition: .3s ease-in-out;
+		background: linear-gradient(-45deg, #00BCD4, #01579B);
+		opacity: 0.8;
+		color: white;
+		border-bottom-left-radius: 2%;
+		border-bottom-right-radius: 2%;
+		
+		
+	}
+	
+	nav ul li a {
+		color: white;
+		text-transform: uppercase;
+		background:none;
+	}
+	
+	nav ul {
+		height: 62vh;
+	}
+	
+	.gora {
+		flex-direction: column;
+		
+	}
+	
+	.prawo {
+		display: none;
+	}
+	
+	.youtube {
+		display: none;
+	}
+	
+	.facebook {
+		display: none;
+	}
+	
+	.instagram {
+		display: none;
+	}
+	
+	nav {
+		justify-content: space-between;
+	}
+	
+	.spacja {
+		display: none;
+	}
+	
+	.con li a {
+		color:white; 
+}
+	
+	
+}
+
+@media only screen and (max-width: 450px) {
+	
+
+}
+
